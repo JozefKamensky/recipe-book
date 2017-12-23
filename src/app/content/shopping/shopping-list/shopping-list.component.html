@@ -1,0 +1,9 @@
+<ul class="list-group">
+  <a 
+    class="list-group-item" 
+    style="cursor: pointer"
+    *ngFor="let ing of ingredients"
+  >
+    {{ ing.name }} ({{ ing.count }} pcs)
+  </a>
+</ul>
