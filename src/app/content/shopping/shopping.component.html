@@ -1,12 +1,14 @@
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    <div class="col-xs-1"></div>
-    <div class="col-xs-10">
+    <div class="col-xs-12">
       <h2> Shopping part </h2>
       <hr>
-      <shopping-list-edit></shopping-list-edit>
-      <shopping-list></shopping-list>
+      <shopping-list-edit
+        (ingredientAdded)="onIngredientAdded($event)"
+      ></shopping-list-edit>
+      <shopping-list
+        [ingredients]="ingredients"
+      ></shopping-list>
     </div>
-    <div class="col-xs-1"></div>
   </div>
 </div>

@@ -13,6 +13,7 @@ import { RecipeListComponent } from './content/recipes/recipe-list/recipe-list.c
 import { RecipeItemComponent } from './content/recipes/recipe-item/recipe-item.component';
 import { RecipesComponent } from './content/recipes/recipes.component';
 import { ShoppingComponent } from './content/shopping/shopping.component';
+import { BetterStyleDirective } from './shared/directives/better-style.directive';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ShoppingComponent } from './content/shopping/shopping.component';
     RecipesComponent,
     RecipeDetailComponent,
     RecipeListComponent,
-    RecipeItemComponent
+    RecipeItemComponent,
+    BetterStyleDirective
   ],
   imports: [
     BrowserModule,
