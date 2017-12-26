@@ -14,6 +14,7 @@ import { RecipeItemComponent } from './content/recipes/recipe-item/recipe-item.c
 import { RecipesComponent } from './content/recipes/recipes.component';
 import { ShoppingComponent } from './content/shopping/shopping.component';
 import { BetterStyleDirective } from './shared/directives/better-style.directive';
+import { DropdownDirective } from './shared/directives/dropdown.directive';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { BetterStyleDirective } from './shared/directives/better-style.directive
     RecipeDetailComponent,
     RecipeListComponent,
     RecipeItemComponent,
-    BetterStyleDirective
+    BetterStyleDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
