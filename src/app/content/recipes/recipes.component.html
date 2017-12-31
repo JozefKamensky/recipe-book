@@ -6,14 +6,7 @@
       <recipe-list></recipe-list>
     </div>
     <div class="col-md-7">
-      <recipe-detail
-        *ngIf="recipeForDetail; else info"
-        [detailRecipe]="recipeForDetail"
-      >
-    </recipe-detail>
-    <ng-template #info>
-      <p>No recipe selected!</p>
-    </ng-template>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
