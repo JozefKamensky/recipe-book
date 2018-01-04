@@ -13,8 +13,8 @@ export class RecipeItemComponent{
 
   constructor(private recipeService: RecipeService){}
 
-  onRecipeSelected(){
-    console.log('Recipe clicked.');
-    this.recipeService.recipeSelected.emit(this.recipe);
-  }
+  // onRecipeSelected(){
+  //   console.log('Recipe clicked.');
+  //   this.recipeService.recipeSelected.emit(this.recipe);
+  // }
 }
