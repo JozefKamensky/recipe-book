@@ -2,7 +2,8 @@
   <a 
     class="list-group-item" 
     style="cursor: pointer"
-    *ngFor="let ing of ingredients"
+    *ngFor="let ing of ingredients, let i = index"
+    (click)="onEditItem(i)"
   >
     <span *ngIf="ing.count === 1">{{ ing.name }} - {{ ing.count }} piece</span>
     <span *ngIf="ing.count !== 1">{{ ing.name }} - {{ ing.count }} pcs</span>
